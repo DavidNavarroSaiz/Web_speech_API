@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Speech Recognition Demo</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="#">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-5">Speech Recognition </h1>
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group">
+              <label for="textToSpeech">Text to Speech:</label>
+              <textarea id="textToSpeech" class="form-control" rows="3" placeholder="Enter text"></textarea>
+            </div>
+            <div class="text-center">
+              <button id="speakButton" class="btn btn-success">Speak</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group">
+              <label for="languageSelect">Select Language:</label>
+              <select id="languageSelect" class="form-control">
+                <option value="en-US">English (US)</option>
+                <option value="es-CO">Spanish (Colombia)</option>
+                <!-- Add more language options as needed -->
+              </select>
+            </div>
+            <div class="text-center">
+              <button id="startButton" class="btn btn-primary">Start Listening</button>
+              <button id="stopButton" class="btn btn-secondary">Stop Listening</button>
+              <button id="clearButton" class="btn btn-danger">Clear Result</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <p id="result"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
